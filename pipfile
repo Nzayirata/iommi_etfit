@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+iommi = "*"
+django = "*"
+
+[requires]
+python_version = "3.10"
+
+[scripts]
+dev = "python manage.py runserver"
+test = "python manage.py test"
+makemigrations = "python manage.py makemigrations"
+migrate = "python manage.py migrate"
